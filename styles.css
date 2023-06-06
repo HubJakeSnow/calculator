@@ -1,0 +1,48 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.display {
+    grid-column: 1 / span 4; /* This spans across all 4 columns */
+    background-color: lightgray;
+    padding: 8px;
+    font-size: 18px;
+    text-align: right;
+    background-color: black;
+    color: white;
+    white-space: pre-wrap; /* Allow multiple lines */
+  }
+  
+button {
+    background-color: orange;
+    color: black;
+    padding: 8px;
+    font-size: 18px;
+    margin: 0;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button.digit {
+    background-color: darkgray;
+}
+
+button.all-clear {
+    background-color: lightgray;
+    grid-column: span 2;
+}
+
+button.clear {
+    background-color: lightgray;
+}
+
+button.point {
+    background-color: darkgray;
+    grid-column: span 2;
+}
